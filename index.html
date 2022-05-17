@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+
+<body>
+    <header class="box">
+        <h1 id="title">Potato Chip Survey</h1>
+        <p id="description">We're conducting a survey on people's tastes in potato chips.</p>
+    </header>
+
+    <main>
+        <form action="submit" id="survey-form">
+            <section id="basicInformation" class="box">
+                <h2>First, please tell us a little bit about yourself.</h2>
+                <fieldset>
+                    <label for="name" id="name-label">First Name</label>
+                    <input type="text" id="name" placeholder="Your name here" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" placeholder="Your email here" required>
+                </fieldset>
+
+                <fieldset>
+                    <label for="age" id="age-label">Age</label>
+                    <input type="number" id="age" min="1" max="130" placeholder="1">
+                </fieldset>
+            </section>
+
+            <section id="chooseFlavor" class="box">
+                <label for="dropdown">
+                    <h2>Next, tell us your favorite flavor! Select one from the dropdown list.</h2>
+                    </h2>
+                </label>
+                <select id="dropdown">
+                    <option value="sour_cream">Sour Cream and Onion</option>
+                    <option value="plain">Plain</option>
+                    <option value="jalapeno">Jalapeno</option>
+                    <option value="barbecue">Barbecue</option>
+                </select>
+            </section>
+
+            <section class="box">
+                <h2>Next, tell us if you prefer salted or unsalted potato chips.</h2>
+                <fieldset>
+                    <div>
+                        <input type="radio" name="option" value="salted" id="radio-1">
+                        <label for="radio-1">
+                            Salted
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="unsalted" id="radio-2">
+                        <label for="radio-2">
+                            Unsalted
+                        </label>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section class="box">
+                <h2>Tell us where you've bought potato chips in the past.</h2>
+                <h3>For example, this could be a supermarket,
+                    local deli, or eatery, such as Subway.
+                </h3>
+                <fieldset>
+                    <div>
+                        <input type="checkbox" name="c-option" value="supermarket" id="checkbox-1">
+                        <label for="checkbox-1">
+                            Supermarket
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="c-option" value="deli" id="checkbox-2">
+                        <label for="checkbox-2">
+                            Deli
+                        </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="c-option" value="barista" id="checkbox-3">
+                        <label for="checkbox-3">
+                            Eatery
+                        </label>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section class="box">
+                <h2>Finally, let us know if you have any thoughts on potato chips, this survery page, or life
+                    in general.
+                </h2>
+                <textarea id="thoughts" rows="5" cols="33"></textarea>
+
+                <h2>
+                    Don't forget to send us your responses.
+                    Thank you for your participation!
+                </h2>
+                <button id="submit" type="submit">Submit</button>
+            </section>
+
+
+        </form>
+    </main>
+</body>
+
+</html>
